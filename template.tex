@@ -1,0 +1,98 @@
+% 1段組にする。
+\documentclass[a4j]{jsarticle}
+% 2段組にする。
+%\documentclass[a4j,twocolumn]{jsarticle}
+
+% 以下のように実行してmyjplain.bstを生成した。
+% nkf jplain.bst > jplain-utf8.bst
+% urlbst --doi --inlinelinks --hyperref jplain-utf8.bst myjplain.bst
+\bibliographystyle{myjplain}
+
+% 著者の所属を使う。
+\usepackage{authblk}
+
+% ハイパーリンクを使う。
+\usepackage[dvipdfmx, % dvipdfmx向けのdviファイルを生成する。
+pdfstartview=FitH, % dvipdfmxで生成したPDFファイルをを開くとウインドウの幅に合わせる
+bookmarks=false, % しおりを作らない。
+colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue % リンクの色を青くする。
+]{hyperref}
+
+% URLを扱う。
+%\usepackage{url}
+
+\title{「」について}
+
+\author[1]{Ryo ONODERA}
+\affil[1]{tetera.org}
+
+\date{20XX-XX-XX}
+
+\begin{document}
+
+% \maketitleの前で定義することで、本文が2段組みの場合にもアブストラクトは1段組みにできる。
+%\begin{abstract}
+%\end{abstract}
+
+% タイトルと著者と所属を印字する。
+\maketitle
+
+
+\section{タイトルと著者}
+% タイトルは日本語訳する。
+XXX 英文タイトル
+~\cite{example}
+
+XXX 日本語訳タイトル
+
+XXX 英文著者
+
+XXX 著者の所属とかに特筆すべきことがあれば日本語で記載する。
+
+\section{アブストラクトの翻訳または要約}
+% 全文を翻訳するにしても要約するにしても日本語にすること。
+XXX
+
+
+\section{気になった箇所}
+% 原則は抜き書きする (コピー・アンド・ペーストするのが理想)。
+% 必ずページ番号を入れること。
+\begin{itemize}
+ 	\item	XXX (p. 101)
+ 	\item	XXX (pp. 111-112)
+ 	\item	XXX (p. 999 10行目)
+\end{itemize}
+
+
+\section{各章を1文で要約する}
+\begin{itemize}
+ 	\item	これまでの研究から、著者はxxxに問題があると考えた。
+		よってこの論文でxxxを調査した。
+ 	\item 	調べ方はxxxで、結果はxxxだった。
+		その理由を著者はxxxと考えた。
+ 	\item	結果について、私はxxxと考えた。
+\end{itemize}
+
+
+\section{参考文献をたどって他の文献を読んだ記録}
+\begin{itemize}
+ 	\item	XXX (\date{2018-10-20})
+		~\cite{example-webpage}
+ 	\item	XXX (\date{2018-10-21})
+		~\cite{example-webpage}
+ 	\item	XXX (\date{2018-10-22})
+		~\cite{example-webpage}
+\end{itemize}
+
+
+\section{本文PDFファイル名}
+XXX.pdf
+% 著者が無料で公開している場合に記載する。
+(
+\url{http://www.example.com/~user/example.pdf}
+)
+
+% 参考文献を印字する。
+\bibliography{myreferences}
+
+\end{document}
