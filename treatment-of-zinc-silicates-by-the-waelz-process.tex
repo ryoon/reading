@@ -1,0 +1,129 @@
+% 1段組にする。
+\documentclass[a4j]{jsarticle}
+% 2段組にする。
+%\documentclass[a4j,twocolumn]{jsarticle}
+
+% 以下のように実行してmyjplain.bstを生成した。
+% nkf jplain.bst > jplain-utf8.bst
+% urlbst --doi --inlinelinks --hyperref jplain-utf8.bst myjplain.bst
+\bibliographystyle{myjplain}
+
+% 著者の所属を使う。
+\usepackage{authblk}
+
+% ハイパーリンクを使う。
+\usepackage[dvipdfmx, % dvipdfmx向けのdviファイルを生成する。
+pdfstartview=FitH, % dvipdfmxで生成したPDFファイルをを開くとウインドウの幅に合わせる
+bookmarks=false, % しおりを作らない。
+colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue % リンクの色を青くする。
+]{hyperref}
+
+\title{「Treatment of zinc silicates by the Waelz Process」について}
+
+\author[1]{Ryo ONODERA}
+\affil[1]{tetera.org}
+
+\date{2018-10-31}
+
+\begin{document}
+
+% \maketitleの前で定義することで、本文が2段組みの場合にもアブストラクトは1段組みにできる。
+%\begin{abstract}
+%\end{abstract}
+
+% タイトルと著者と所属を印字する。
+\maketitle
+
+
+\section{タイトルと著者}
+% タイトルは日本語訳する。
+Treatment of zinc silicates by the Waelz Process
+~\cite{saimm-1976-08-waelz-znsio4}
+
+ウェルツ法によるケイ亜鉛鉱処理
+
+J.E. CLAY and G.P. SCHOONRAAD
+
+
+\section{アブストラクトの翻訳または要約}
+% 全文を翻訳するにしても要約するにしても日本語にすること。
+ウェルツ法について概観し、クラストの生成機構を化学的に説明した。
+Kiln Products Limited社のプラントとその操業について説明した。
+そのプラントで遭遇した問題とその解決方法についても説明した。
+
+
+\section{気になった箇所}
+% 原則は抜き書きする (コピー・アンド・ペーストするのが理想)。
+% 必ずページ番号を入れること。
+\begin{itemize}
+\item
+  (d) At least 90 per cent of the zinc present can be volatilized without exceeding 1100 degC. (p. 11左)
+\item
+  the magnesium and fluorine might prove troublesome, high recoveries of zinc could be expected. (p. 11右)
+\item
+  The material containing zinc inthe form of zinc oxide, zinc ferrite, zinc silicate, or zinc sulphide is mixed with any carbon-containing fuel. When heated in a horizontal rotary kiln at temperatures ranging from 1000 to 1500 degC, the zinc is reduced, volatilizxed, and oxidized to zinc oxide. The zinc oxide is then separated from the exhaust gases by bag filters or electrostatic precipitators.
+(p. 11右)
+\item
+  ZnO + CO = Zn (vapour) + CO2 (13)\newline
+  2ZnO.SiO2 + 2CO → 2Zn (vapour) + SiO2 + 2CO2 (14)\newline
+  C + CO2 → 2CO (15)\newline
+\item
+  Simultaneous reaction actually (13) and (15) and, by analogy, (14) and (15). (p. 11右
+\item
+  crusts are made up essentially of metallic iron, which accounts for 40 to 85 per cent of the volume. (p. 12左)
+\item
+  Wustite is most frequently found at the iron-slag boundary. (p. 12左)
+\item
+  it was established that the reduction process occurs autocatalytically and that the catalyst is metallic iron (the reduction product). (p. 12左)
+\item
+  During Waelz processing, the reduction is aided by the calcium oxide present in the feed material. (p. 12左)
+\item
+  Studies by Lakernik on synthetic slags of the system FeO-SiO2-CaO showed that, the greater the CaO:SiO2 ratio, the higher the activity coefficient, i.e., the more iron will be reduced from the slags. (p. 12左)
+\item
+  As the material approaches the higher temperature zone and, consequently, the zone in which the basic technological reaction of zinc reduction begins, the low-carbon iron turns liquid when it comes into contact with the heated lining. Next, the refractory compounds of calcium and magnesium oxide adhere to the furnace lining and form annular crusts. (p. 12左-右)
+\item
+  To minimize crust formation, a (CaO+MgO):SiO2 ratio of 1 is required. (p. 12右)
+\item
+  The kiln is 4m in diameter by 75m long, (p. 13左)
+\item
+  The inlet and outlet sections of the kiln are tapered to 1.9m and 2.87m respectively. (p. 13左)
+\item
+  The kiln speed is variable from 0.25 to 1.25 r/min. (p. 13左)
+\item
+  Slag discharge temperature are normally kept at 1000 degC, and exit gas temperature at 500 to 600 degC. (p. 13左)
+\item
+  the kiln is now fired with pulverized bituminous coal. (p. 13右)
+\end{itemize}
+
+
+\section{各章を1文で要約する}
+\begin{itemize}
+\item
+  Kiln Products Limited社におけるウェルツキルンの導入に至った経緯を説明した。
+\item
+  ウェルツ法とは、どのような化学プロセスであると理解されているかを説明した。
+\item
+  ロータリーキルン内に付着するクラストについて、金属鉄が主成分であることを示し、(CaO+MgO):SiO2比を1にすることで、クラストの生成を抑えられることを示した。
+\item
+  Kiln Products Limited社のプラントの採用したマテリアルフローを説明し、各機械の諸元についても示した。
+\item
+  キルンバーナー、温度測定、酸素供給用ファン、スラグ排出シュート、粗酸化亜鉛の集塵方法、ロータリーキルン耐火物ライニングについて、問題と解決法を示した。
+\item
+  私はこの論文を読むことで、ウェルツ法の基本的な考え方とウェルツキルンを含むプラントの概要を把握することができた。また、ロータリーキルンを運転する場合に発生する問題の一例を知ることができた。
+\end{itemize}
+
+
+\section{参考文献をたどって他の文献を読んだ記録}
+なし。
+
+\section{本文PDFファイル名}
+lv077n01p011.pdf
+% 著者が無料で公開している場合に記載する。
+(
+\url{https://www.saimm.co.za/Journal/v077n01p011.pdf}
+)
+
+% 参考文献を印字する。
+\bibliography{myreferences}
+
+\end{document}
