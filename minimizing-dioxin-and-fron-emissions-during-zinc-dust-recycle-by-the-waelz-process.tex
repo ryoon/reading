@@ -1,0 +1,132 @@
+% 1段組にする。
+\documentclass[a4j]{jsarticle}
+% 2段組にする。
+%\documentclass[a4j,twocolumn]{jsarticle}
+
+% 以下のように実行してmyjplain.bstを生成した。
+% nkf jplain.bst > jplain-utf8.bst
+% urlbst --doi --inlinelinks --hyperref jplain-utf8.bst myjplain.bst
+\bibliographystyle{myjplain}
+
+% 著者の所属を使う。
+\usepackage{authblk}
+
+% ハイパーリンクを使う。
+\usepackage[dvipdfmx, % dvipdfmx向けのdviファイルを生成する。
+pdfstartview=FitH, % dvipdfmxで生成したPDFファイルをを開くとウインドウの幅に合わせる
+bookmarks=false, % しおりを作らない。
+colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue % リンクの色を青くする。
+]{hyperref}
+
+\title{「Minimizing Dioxin and Furan Emissions during Zinc Dust Recycle
+by the Waelz Process」について}
+
+\author[1]{Ryo ONODERA}
+\affil[1]{tetera.org}
+
+\date{2019-02-23}
+
+\begin{document}
+
+% \maketitleの前で定義することで、本文が2段組みの場合にもアブストラクトは1段組みにできる。
+%\begin{abstract}
+%\end{abstract}
+
+% タイトルと著者と所属を印字する。
+\maketitle
+
+
+\section{タイトルと著者}
+% タイトルは日本語訳する。
+Minimizing Dioxin and Furan Emissions during Zinc Dust Recycle
+by the Waelz Process
+~\cite{mager-jom-2003}
+
+ウェルツ法による亜鉛ダストリサイクルにおけるダイオキシンとフラン排出量の最小化
+
+K. Mager, U. Meurer, and J. Wirling
+
+
+\section{アブストラクトの翻訳または要約}
+% 全文を翻訳するにしても要約するにしても日本語にすること。
+ウェルツ法は、亜鉛と鉛を含んだ製鉄所のダストを処理する古典的なプロセスである。
+ほとんどの場合、原料は有機物と無機物でひどく汚染されているため、
+このプロセスでは排ガス処理システムが特に重要である。
+残渣の熱処理の結果、ダイオキシンとフランが排ガス側に移行し、
+これに対応した排ガス処理システムが必要になる。
+本論文では、2基のウェルツキルンプラントの例を用いて、
+ダイオキシンとフランの生成を最小化するための主な対策を説明する。
+
+\section{気になった箇所}
+% 原則は抜き書きする (コピー・アンド・ペーストするのが理想)。
+% 必ずページ番号を入れること。
+\begin{itemize}
+\item
+For the purpose of controlling dioxin and furan formation, comprehensive tests were carried out two Waelz kiln units of Berzelius Umwelt-Service (B.U.S. AG). (That company became Nordag AG in May 2003).
+
+\item
+Nordag AG operates four Waelz plants with an installed capacity of about 500,000 of steel mill flue dust per year. The plants are in Germany, France, and Italy and produce around 100,000 t/y zinc and lead that are returned to the resource cycle. By means of process modifications as well as innovative off-gas technology, the Waelz process can be used to treat other materials containing zinc and lead such as residues from the electroplating industry and waste water treatment, zinc sludge and ashes, and contaminated coke.
+
+\item
+To change the kiln, a homogeneous mix is prepared in pallet form. The Waelz kiln itself is typically 50m long and has a diameter of 3.6m. it is slightly inclined and operates at a speed of 1.2 rpm.
+
+\item
+Through controlled admission of air ar the kiln outlet end, zinc and lead in the gas phase are oxidized again and the metallic iron content of the changes is re-oxidized and the process heat thus liberated is effectively utilized in the charge. Hence, it is sufficient to add coke at a substoichiometric ratio.
+
+\item
+The dust-free off-gas is cleaned of dioxin, mercury, and cadmium
+
+\item
+In the past, Waelz oxide was almost exclusively processed in Imperial Smelting Furnace reactors after briquetting to recover zinc and lead.
+
+\item
+the retention time of the feed material in the Waelz kiln is between four and six hours.
+
+\item
+The acid process in which SiO2 is added to the mix functions at a basicity of 0.2 to 0.5. The basic process to which lime, limestone, or burnt lime is added is operated at a basicity of between 1.5 and 4.
+
+\item
+At a slag basicity of about 1, accretion are forming that may lead to agglomeration in the inlet section of the kiln as well as the formation of iron-rich rings in the reaction zone.
+
+\item
+As the conditions for a de-novo synthesis exist in the Waelz process and the process dusts often remain in the offgas system for an extended period of time due to the use of electrostatic precipitators, the reformation of PCDD/F is quite possible in the offgas cleaning system.
+
+\item
+the chargeover to the basic operating mode is of particular significance for the supression of the formation pf PCDD/F.
+
+\item
+It is assumed that the basic substances reacts with HCl in the off-gas and thus reduce the chlorine supply needed for PCDD/F formation.
+
+\item
+The formation of PCDD/F takes place primarily in gas/solids reactions on the Waelz oxide dust at temperatures around, 300 degC.
+
+\item
+The capture of major dust rate should take place at temperatures below 250 degC or above 600 degC.
+
+\item
+the chloride content in the dust and gas should be minimized by a suitable mode of operation of the Waelz kiln plant.
+
+\item
+by vurbing the chlorine load alone a significant PCDD/F minimization formation can be achieved.
+
+\item
+the PCDD/F concentrations in the feed materials are almost completely destroyed thermally in the basic operating mode.
+
+\end{itemize}
+
+
+\section{各章を1文で要約する}
+Nordag AG社の2箇所のウェルツ法を実施するプラントにおける、PCDD/F (polychloridedibenzodixines and dibenzofurans)の生成について、排ガス中とダスト(粗酸化亜鉛)上での生成について検討した。300 degC程度の温度にこけるダスト上での気固反応によって、PCDD/Fが生成するのが主要な生成反応であった。
+私としては、ウェルツキルンの運転は、B=(\%CaO+\%MgO)/\%SiO2で決まるB=basicityのよって酸性プロセス(0.2<=B<0.5)と、塩基性プロセス(1.5<=B<=4)の2つの運転の方法があることが分かったのが収穫だった。
+
+\section{参考文献をたどって他の文献を読んだ記録}
+なし。
+
+\section{本文PDFファイル名}
+Mager2003\_Article\_MinimizingDioxinAndFuranEmissi.pdf
+% 著者が無料で公開している場合に記載する。
+
+% 参考文献を印字する。
+\bibliography{myreferences}
+
+\end{document}
